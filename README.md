@@ -1,8 +1,10 @@
 # slack-fw-telegram-bot
 
 I'm using module https://hostbillapp.com/feature/slack-notifications/ to push event (ticket or invoice) from Hostbill to Slack channel. But I also want to push this event to Telegram. 
+
 Therefore, I write a simple Slackbot (using `errbot` framework) to create a Slack bot forward any message (type text or attachments) from Slack channel to Telegram.
-## Run Slack bot as daemon on VPS
+
+## Run Slack bot as daemon
 
 - Install requirement packages
 
@@ -56,13 +58,13 @@ errbot -d
 - Secondly, build docker image from source code
 
 ```bash
-docker build -t slackfw-bot .
+docker build -t slack-fw-bot .
 ```
 
 - Finannly, run container by `docker` or `docker-compose` command
 
 ```bash
-docker run --name slackfw-bot -d slackfw-bot
+docker run --name slack-fw-telegram-bot -d slack-fw-bot
 ```
 
 ```bash
