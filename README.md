@@ -61,7 +61,7 @@ errbot -d
 docker build -t slack-fw-bot .
 ```
 
-- Finannly, run container by `docker` or `docker-compose` command
+- Finally, run container by `docker` or `docker-compose` command
 
 ```bash
 docker run --name slack-fw-telegram-bot -d slack-fw-bot
