@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  slack-fw-telegram-bot:
+    container_name: slack-fw-telegram-bot
+    image: slack-fw-bot:latest 
+    restart: unless-stopped

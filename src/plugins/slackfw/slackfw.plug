@@ -1,0 +1,9 @@
+[Core]
+Name = SlackFW 
+Module = slackfw
+
+[Documentation]
+Description = SlackFW modules.
+
+[Python]
+Version = 2+
